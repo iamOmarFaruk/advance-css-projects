@@ -1,0 +1,35 @@
+// reset css
+// import poppins font from goolge
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+height: 100vh;
+display: grid;
+justify-items: center;
+align-items: center;
+background: #b5dfeb;
+}
+.container{
+  width: 40%;
+  background: #fff;
+  border-radius: 10px;
+  .inner{
+    background-color: rgb(24, 71, 103);
+    padding: 1em;
+    width: 100%;
+    border-radius: 10px;
+    color: #fff;
+    clip-path: circle(10% at 0% 0%);
+    transition: clip-path .2s ease-in-out;
+  }
+  &:hover .inner{
+    clip-path: circle(100%);
+  }
+}
+
